@@ -1,38 +1,411 @@
 .App {
-  text-align: center;
-}
+  background: rgba(248, 248, 248, 0.781);
+ }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+ .DarkMode {
+  background:rgb(150, 148, 148);
+ }
+ 
+ html {
+  height: 100%;
+  width: 100%;
+ }
+ * {
+  margin: 0;
+  padding: 0;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  
+  body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-height: 100%;
+  min-width: 100%;
+ 
+  /* background: rgb(201, 199, 199); */
+  background-size:cover;
+  position: relative;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+
+
+.navLinkRoutes {
+  text-decoration: none;
+  font-size:x-large;
+  padding: 2%;
+  /* color: rgb(214, 189, 238); */
+  color: rgb(201, 199, 199);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.active {
+    text-decoration: underline;
+    color: rgb(161, 144, 29);
+    font-weight: bold;
   }
-  to {
-    transform: rotate(360deg);
+
+
+  .navLinkRoutes:hover {
+    text-decoration: none;
+    transform: scale(1.20);
+    transition: transform .3s ease;
+    color: white;
+    font-weight: bolder;
   }
+  .active:hover {
+    text-decoration: underline;
+    color: rgb(161, 144, 29);
+    font-weight: bolder;
+  }
+
+img:hover {
+  transform: scale(1.05);
+  transition: transform .1s ease;
 }
+  .mastHead {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* color: rgb(214, 189, 238); */
+    color:rgb(161, 144, 29);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  /* .mastHead:hover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: blue;
+  } */
+
+  .NavLinkContainer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-right: 15%;
+    margin-left: 15%;
+    padding-bottom: 0%;
+    font-weight: bold;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+  }
+
+  .linkContainer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: .6%;
+    padding-top: 3%;
+    margin-right: .5%;
+    background-color: black;
+    text-decoration: none;
+  }
+
+  .socialLinks {
+    text-decoration: none;
+    margin-bottom: 2%;
+  }
+
+  .facecardContainerContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-style: groove;
+    margin-top: 2%;
+    padding: 3%;
+    border-radius: 8%;
+    border-width: 2px;
+    box-shadow: 2px 2px 23px 2px;
+    background-color: rgb(161, 144, 29);
+  }
+
+  .faceCardContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+   .faceCard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+
+   .profilePicture {
+    border-radius: 50%;
+    box-shadow: 0px 0px 25px 10px rgb(172, 169, 169);
+   }
+
+   #fullUnderPicContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 1%;
+    margin-right: 1%;
+   }
+
+   
+   .navBarHeader {
+    /* background-color:#49274A; */
+    background-color: black;
+   }
+
+   #finePrint {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: xx-small;
+    margin-top:.8%;
+   }
+
+   #accessLinks {
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    padding-bottom: 1.7%;
+    font-weight: bold;
+    margin-left: 3%;
+   }
+
+  .objectContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1.7%;
+    margin-left: 2%;
+  }
+
+  .coverStatement {
+    display: center;
+    justify-content: center;
+    align-items: center;
+    text-align:center;
+    width: 80%;
+    margin-left: 8.5%;
+    margin-bottom: 1.7%;
+    font-weight: bold;
+    font-size: x-large;
+    border-style: groove;
+    box-shadow: 2px 2px 20px 2px;
+    padding:2%;
+    background-color: rgb(161, 144, 29);
+    font-family: Helvetica;
+  }
+
+  #consummate {
+    text-align:center;
+  }
+
+  .upperFooter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3.0%;
+  }
+
+  #sendEmailForm {
+    max-width: 100%;
+    max-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  #emailContent {
+    width: 50%;
+    height: 29vh;
+    border-radius: .5%;
+    background-color:white;
+    padding: .5%;
+    font-weight: bold;
+    font-size: 1.3em;
+  }
+
+  #emailHeader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1%;
+    padding-top: 2%;
+  }
+  
+  .formLabels {
+    padding-bottom: .5%;
+    padding-top: 1.5%;
+    font-weight: bold;
+    font-size: larger;
+  }
+
+
+  #fullName,  #userEmail, #emailSubject{
+      width: 20%;
+      height: 4vh;
+      border-radius: 5%;
+      background-color:white;
+      padding: .2%;
+      font-weight:bold;
+      font-size: 1em;
+      color: black;
+  }
+
+  #emailSubmitButton {
+    margin-top: 2%;
+    width: 5%;
+    padding-bottom: .5%;
+    padding-top: .5%;
+  }
+
+  #darkModeButton {
+    height: 4vh;
+    width: 7vh;
+    border-radius: 5%;
+    background-color:rgb(150, 148, 148);
+    font-weight: bold;
+    font-size: 1.5vh;
+    color:white;
+    
+  }
+
+  #lightModeButton {
+    height: 4vh;
+    width: 7vh;
+    border-radius: 5%;
+    background-color:white;
+    font-weight: bold;
+    color: black;
+  }
+
+  .darkLightModeButton {
+    position: relative;
+    top: 2%;
+    left: 2%;
+  }
+
+  #currentTime {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: .7%;
+    padding-bottom: .3%;
+    padding-top: .3%;
+    background-color:black;
+    color: rgb(250, 250, 250);
+  }
+
+  #locationContainer {
+    display: center;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: .7%;
+    text-align:center;
+  }
+
+  #userCity {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: white;
+    background-color: black;
+    color:rgb(161, 144, 29);
+    font-size: smaller;
+  }
+
+  #userState {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: white;
+    background-color: black;
+    color:rgb(161, 144, 29);
+    font-size: small;
+  }
+
+  #projectContainer {
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    text-align: center;
+    margin-top: 1%;
+    margin-bottom: 2%;
+  }
+
+  .projectImages {
+    height: 80%;
+    width: 55%;
+    box-shadow: 2px 2px 23px 2px;
+  }
+
+  .projectLabels {
+    font-weight:700;
+  }
+
+  #moreinDev {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8%;
+    color: rgb(204, 162, 99);
+    font-weight: bold;
+  }
+
+  .projectDescriptions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2%;
+    font-size:medium;
+    font-weight:bolder;
+  }
+
+  #projectList {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2%;
+    color: blue;
+  }
+
+  .diplomaImages {
+    display: flex;
+    width: 17%;
+    margin: 5%;
+  }
+
+  .diplomaImages:hover {
+    transform: scale(2.05);
+    transition: transform .1s ease;
+  }
+
+  .trollLinks:visited {
+    text-decoration: none;
+    color: blue;
+  }
+
+
+  .flatironimage {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    width: 17%;
+    margin: 5%;
+  }
+
+  #flatironimageContainer {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-right: 1.5%;
+  }
+
+  .flatironimage:hover {
+    transform: scale(2.05);
+    transition: transform .1s ease;
+  }

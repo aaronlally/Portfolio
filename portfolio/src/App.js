@@ -1,23 +1,30 @@
-import logo from './logo.svg';
+import React, { useState } from "react";
 import './App.css';
+import { Routes, Route } from "react-router-dom"
+import Home from "./Home"
+import NavBar from "./NavBar"
+import Contact from "./Contact"
+import Projects from "./Projects"
+import About from "./About"
+import Footer from "./Footer";
 
 function App() {
+  const [darkMode, setDarkMode] = useState(false)
+
+const changeDarkMode = () => {
+  setDarkMode(prevState => !prevState)
+
+}
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={darkMode ? "DarkMode" : "App"}>
+     <NavBar changeDarkMode={changeDarkMode} darkMode={darkMode} />
+     <Routes>
+      <Route exact path="/" element={<Home />} />
+      <Route path="/about" element={<About />} />
+      <Route path="/projects" element={<Projects />} />
+      <Route path="/contact" element={<Contact />} />
+     </Routes>
+     <Footer />
     </div>
   );
 }
